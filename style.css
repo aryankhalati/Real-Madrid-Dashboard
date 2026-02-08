@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(208, 195, 195);
+     font-family: sans-serif;
+    color: #310808;
+    line-height: 1.6;
+}
+.main-container{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    padding-top: 25px;
+    margin: auto;
+    height: 90vh
+
+}
+.sidebar{
+    background-color: rgba(237, 222, 222, 0.833);
+     border-radius: 10px;
+     border: 2px solid rgba(128, 102, 102, 0.833);
+     padding: 40px;
+     height: 1150px;
+}
+.main-content{
+     background-color: #aca5a5;
+    height: 100%;
+    border: 2px solid #7a6363;
+     border-radius: 15px;
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    height: 120px;
+    width: 120px;
+}
+.stadium{
+    text-align: center;
+     border-bottom: 2px solid #3a3a3a;
+     padding-bottom: 15px;
+}
+
+.stadium img{
+    width: 98%;
+    height: 220px;
+    padding-top: 30px;
+     margin-top: 20px;
+     border-top: 2px solid #3a3a3a;
+     
+}  
+.perez{
+    text-align: center;
+     border-bottom: 2px solid #3a3a3a;
+}
+.perez img{
+    height: 250px;
+    width: 200px;
+     padding-top: 15px;
+     margin-top: 10px;
+     
+     
+}
+.manager{
+    text-align: center;
+      border-bottom: 2px solid #3a3a3a;
+}
+.manager img{
+     height: 250px;
+    width: 200px;
+     padding-top: 15px;
+     margin-top: 10px;
+
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+     border-bottom: 2px solid #3a3a3a;
+     padding-bottom: 10px;
+      padding-top: 5px;
+      padding-right: 5px;
+}
+nav a{
+    text-decoration: none;
+    color: #310808;
+     font-weight: 500;
+    transition: color 0.3s ease;
+}
+nav a:hover{
+    color: #764141;
+}
+.line{
+    width: 95px;
+    height: 3px;
+    background-color:  #3a3a3a;
+    margin-bottom: 10px;
+}
+.grid-attack{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.attacker img{
+    height: 200px;
+    width: 150px;
+    padding-right: 30px;
+    
+    
+}
+.attacker{
+    padding: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+     text-align: center;
+     margin-top: 10px;
+     width: 160px;
+     margin-left: 15px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     background-color: rgba(51, 177, 177, 0.842);
+     background: linear-gradient(135deg, rgba(51,177,177,0.9), rgba(28,127,127,0.85));
+
+}
+
+
+.attacker:hover{
+   transform: scale(1.05);
+    box-shadow: 0px 0px 10px 5px rgba(117, 111, 111, 0.3);
+    cursor: pointer;
+}
+.grid-midfield{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.midfielder img{
+     height: 200px;
+    width: 150px;
+    padding-right: 30px;
+   
+
+}
+.midfielder{
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+     text-align: center;
+     margin-top: 10px;
+     width: 160px;
+     margin-left: 15px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: rgba(51, 177, 177, 0.842);
+      background: linear-gradient(135deg, rgba(51,177,177,0.9), rgba(28,127,127,0.85));
+
+}
+.midfielder:hover{
+     transform: scale(1.05);
+    box-shadow: 0px 0px 10px 5px rgba(117, 111, 111, 0.3);
+    cursor: pointer;
+}
+#mf{
+    margin-top: 10px;
+    
+}
+.grid-defence{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.defender img{
+     height: 200px;
+    width: 150px;
+    padding-right: 30px;
+   
+}
+.defender{
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+     text-align: center;
+     margin-top: 10px;
+     width: 160px;
+     margin-left: 15px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: rgba(51, 177, 177, 0.842);
+      background: linear-gradient(135deg, rgba(51,177,177,0.9), rgba(28,127,127,0.85));
+
+}
+.defender:hover{
+     transform: scale(1.05);
+    box-shadow: 0px 0px 10px 5px rgba(117, 111, 111, 0.3);
+    cursor: pointer;
+}
+.grid-goalie{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.goalkeeper img{
+     height: 200px;
+    width: 150px;
+    padding-right: 30px;
+   
+}
+.goalkeeper{
+     padding: 20px;
+    padding-top: 30px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+     text-align: center;
+     margin-top: 10px;
+     width: 160px;
+     margin-left: 15px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+       background-color: rgba(51, 177, 177, 0.842);
+       background: linear-gradient(135deg, rgba(51,177,177,0.9), rgba(28,127,127,0.85));
+
+}
+.goalkeeper:hover{
+     transform: scale(1.05);
+    box-shadow: 0px 0px 10px 5px rgba(117, 111, 111, 0.3);
+    cursor: pointer;
+}
+.head{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+
+
